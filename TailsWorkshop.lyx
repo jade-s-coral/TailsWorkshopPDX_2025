@@ -270,10 +270,11 @@ Otherwise co-opt or use the medium for unintended purposes.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Risk
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 Risk = Cost of bad thing * Likelihood of bad thing
 \end_layout
@@ -301,6 +302,63 @@ literal "false"
 
 \begin_layout Standard
 https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Threat Model
+\end_layout
+
+\begin_layout Section
+Creating and Setting up Tails
+\end_layout
+
+\begin_layout Subsection
+Downloading the Tails ISO
+\end_layout
+
+\begin_layout Subsection
+Flashing the Tails USB
+\end_layout
+
+\begin_layout Subsection
+Booting From the USB
+\end_layout
+
+\begin_layout Subsection
+Selecting Boot-up Options
+\end_layout
+
+\begin_layout Subsection
+Creating a LUKS Encrypted Drive
+\end_layout
+
+\begin_layout Subsection
+Setting up a Password Manager with KeePassXC
+\end_layout
+
+\begin_layout Section
+Using Tails
+\end_layout
+
+\begin_layout Subsection
+Using TOR
+\end_layout
+
+\begin_layout Subsection
+Sending Encrypted Messages
+\end_layout
+
+\begin_layout Subsection
+Using Dangerzone
+\end_layout
+
+\begin_layout Subsection
+Using OnionShare
+\end_layout
+
+\begin_layout Subsection
+Using Electrum Wallet
 \end_layout
 
 \begin_layout Bibliography
