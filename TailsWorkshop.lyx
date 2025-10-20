@@ -101,7 +101,11 @@ v0.1
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Part
+Intro
+\end_layout
+
+\begin_layout Section
 Intention
 \end_layout
 
@@ -167,7 +171,7 @@ Something that equips them to be one modicum safer than they were before.
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 What Is Tails?
 \end_layout
 
@@ -202,7 +206,7 @@ Route all internet traffic over the TOR network to provide privacy and anonymity
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Why should I use Tails?
 \end_layout
 
@@ -220,13 +224,13 @@ Weather you care about mitigating those specific threats depends on you,
  your specific risk profile and risk tolerance.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Some Terminology
 \end_layout
 
 \begin_layout Standard
-I'm going to throw some definitions out here,
- because I think having a shared understanding of these terms makes us more effective when thinking about and talking about digital privacy.
+Some very quick definitions.
+ A shared understanding of these terms makes us more effective when talking about digital privacy.
 \end_layout
 
 \begin_layout Itemize
@@ -238,8 +242,16 @@ Anonymity - Who is talking to who?
 Privacy - What are they talking about?
 \end_layout
 
-\begin_layout Itemize
-Security - How resistant is their communication medium to interventions that downgrade it in potentially several ways:
+\begin_layout Verse
+Security - How resistant is their communication medium to interventions that downgrade it in potentially several ways
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "true"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_deeper
@@ -284,12 +296,25 @@ Examples:
 \end_layout
 
 \begin_layout Standard
-Risk of dying in a car crash:
+Risk of getting in a car crash:
 \end_layout
 
 \begin_layout Standard
-High cost (Death) x medium-low likelihood,
- depending 
+Cost:
+ Pretty high,
+ ranges from injury or death depending on the kind of accident.
+\end_layout
+
+\begin_layout Standard
+x 
+\end_layout
+
+\begin_layout Standard
+Likelyhood:
+ Depends on your age,
+ lifestyle,
+ and other factors.
+ In the United States it ranked as the 13th leading cause of death among all causes in 2016 and 2017.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1"
@@ -301,7 +326,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm
+= Risk depends on individual factors.
 \end_layout
 
 \end_deeper
@@ -309,55 +334,171 @@ https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm
 Threat Model
 \end_layout
 
-\begin_layout Section
+\begin_deeper
+\begin_layout Itemize
+A structured way of identifying 
+\begin_inset Quotes eld
+\end_inset
+
+threats
+\begin_inset Quotes erd
+\end_inset
+
+ to goals and selecting countermeasures.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What are our goals?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ex:
+ Feeding the Homeless
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Who or what might oppose or complicate those goals?
+ 
+\end_layout
+
+\begin_layout Itemize
+What can we do about it?
+\end_layout
+
+\begin_layout Itemize
+Is our threat model well informed?
+ Is it effective?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Below are additional resources on threat modeling
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This zine is tailored towards activists and I think covers threat modeling well and doesn't get wrapped up in computery stuff:
+ https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
+\end_layout
+
+\begin_layout Itemize
+One potential place to research threats and mitigation's for activism-type activities https://www.notrace.how/threat-library/
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Things Tails Can and Cannot Mitigate
+\end_layout
+
+\begin_layout Subsubsection
+What Tails Does well:
+\end_layout
+
+\begin_layout Itemize
+Keeps web traffic anonymous and private from internet service providers or other people on the network.
+\end_layout
+
+\begin_layout Itemize
+Keeps web traffic anonymous from the website you are visiting.
+\end_layout
+
+\begin_layout Itemize
+Provides decent security for most everyday potential threats.
+\end_layout
+
+\begin_layout Itemize
+Note on LUKS encryption.
+\end_layout
+
+\begin_layout Itemize
+Note on Monero.
+\end_layout
+
+\begin_layout Subsubsection
+What Tails Doesn't do well:
+\end_layout
+
+\begin_layout Itemize
+Hide from your Internet Service provider you are using TOR.
+\end_layout
+
+\begin_layout Itemize
+Hide from you the website you are visiting using TOR.
+\end_layout
+
+\begin_layout Itemize
+Protect your anonymity if you do something that unmasks you.
+\end_layout
+
+\begin_layout Itemize
+Provide security against people with nationstate level resources.
+\end_layout
+
+\begin_layout Part
 Creating and Setting up Tails
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Downloading the Tails ISO
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Flashing the Tails USB
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Booting From the USB
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Selecting Boot-up Options
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Creating a LUKS Encrypted Drive
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Setting up a Password Manager with KeePassXC
 \end_layout
 
-\begin_layout Section
+\begin_layout Part
 Using Tails
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using TOR
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Notes on how to not unmask yourself.
+\end_layout
+
+\begin_layout Section
 Sending Encrypted Messages
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using Dangerzone
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using OnionShare
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using Electrum Wallet
 \end_layout
 
@@ -374,14 +515,52 @@ literal "true"
 \begin_inset Quotes eld
 \end_inset
 
-Motor Vehicle Traffic Crashes as a Leading Cause of Death and Potential Years of Life Lost Years:
- 2012-2022
+Motor Vehicle Traffic Crashes as a Leading Cause of Death in the United States,
+ 2016,
+ 2017
 \begin_inset Quotes erd
 \end_inset
 
 ,
  NHTSA.
- https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm 2025
+ https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812927
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Security vs privacy vs anonymity
+\begin_inset Quotes erd
+\end_inset
+
+ pg 22.
+ Turn Off Your Phone.org https://www.fightforthefuture.org/wp-content/uploads/2025/09/FullGuide-TurnOffYourPhone.pdf 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+The Basics
+\begin_inset Quotes erd
+\end_inset
+
+ Thread Modeling Fundamentals Håkan Geijer https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
 \end_layout
 
 \begin_layout Bibliography
