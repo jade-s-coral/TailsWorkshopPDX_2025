@@ -1,0 +1,340 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Community Tails Workshop
+\end_layout
+
+\begin_layout Date
+v0.1
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Intention
+\end_layout
+
+\begin_layout Standard
+Technology rewards the curious.
+ 
+\end_layout
+
+\begin_layout Standard
+I am running this workshop to equip my community with tools to better protect its safety.
+ 
+\end_layout
+
+\begin_layout Standard
+That said,
+ it can be very easy to doomspiral,
+ hyperfocus on worst case scenarios,
+ become fixated on mythical 
+\begin_inset Quotes eld
+\end_inset
+
+most secure
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+correct
+\begin_inset Quotes erd
+\end_inset
+
+ tools and processes,
+ or to become overwhelmed and disengage entirely.
+ 
+\end_layout
+
+\begin_layout Standard
+We learn best when we are open,
+ curious,
+ and playful.
+ Stepping into that headspace for this workshop may be hard,
+ and will likely be harder for some than others.
+ Meet yourself where you're at.
+ 
+\end_layout
+
+\begin_layout Standard
+I will personally consider the workshop a success if everyone who attends learns:
+\end_layout
+
+\begin_layout Itemize
+Something they think is cool.
+\end_layout
+
+\begin_layout Itemize
+Something that makes them curious to know more.
+\end_layout
+
+\begin_layout Itemize
+Something that equips them to be one modicum safer than they were before.
+ 
+\end_layout
+
+\begin_layout Section*
+What Is Tails?
+\end_layout
+
+\begin_layout Standard
+Tails (The Amnesic & Incognito Live System) is a tool for mitigating digital surveillance and censorship.
+\end_layout
+
+\begin_layout Standard
+It is a bootable Live USB.
+ You plug it into a computer,
+ and boot into a temporary separate Operating System.
+ 
+\end_layout
+
+\begin_layout Standard
+By default Tails will:
+ 
+\end_layout
+
+\begin_layout Itemize
+Retain no data between sessions to avoid leaving traces of what you use it for.
+\end_layout
+
+\begin_layout Itemize
+Route all internet traffic over the TOR network to provide privacy and anonymity while using the internet.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Why should I use Tails?
+\end_layout
+
+\begin_layout Standard
+I can't answer that question for you.
+ Only you can.
+\end_layout
+
+\begin_layout Standard
+Tails is a tool designed to mitigate specific threats.
+\end_layout
+
+\begin_layout Standard
+Weather you care about mitigating those specific threats depends on you,
+ your specific risk profile and risk tolerance.
+\end_layout
+
+\begin_layout Subsection*
+Some Terminology
+\end_layout
+
+\begin_layout Standard
+I'm going to throw some definitions out here,
+ because I think having a shared understanding of these terms makes us more effective when thinking about and talking about digital privacy.
+\end_layout
+
+\begin_layout Itemize
+Anonymity - Who is talking to who?
+ Metadata.
+\end_layout
+
+\begin_layout Itemize
+Privacy - What are they talking about?
+\end_layout
+
+\begin_layout Itemize
+Security - How resistant is their communication medium to interventions that downgrade it in potentially several ways:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Anonymity,
+ unmask the participants.
+\end_layout
+
+\begin_layout Itemize
+Privacy,
+ gain access to the contents of their communication.
+\end_layout
+
+\begin_layout Itemize
+Availability,
+ take the medium down and make it unavailable for use.
+\end_layout
+
+\begin_layout Itemize
+Otherwise co-opt or use the medium for unintended purposes.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Risk
+\end_layout
+
+\begin_layout Standard
+Risk = Cost of bad thing * Likelihood of bad thing
+\end_layout
+
+\begin_layout Standard
+Examples:
+\end_layout
+
+\begin_layout Standard
+Risk of dying in a car crash:
+\end_layout
+
+\begin_layout Standard
+High cost (Death) x medium-low likelihood,
+ depending 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "1"
+key "1"
+literal "true"
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Motor Vehicle Traffic Crashes as a Leading Cause of Death and Potential Years of Life Lost Years:
+ 2012-2022
+\begin_inset Quotes erd
+\end_inset
+
+,
+ NHTSA.
+ https://cdan.dot.gov/LeadingCauses/LeadingCauses.htm 2025
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
