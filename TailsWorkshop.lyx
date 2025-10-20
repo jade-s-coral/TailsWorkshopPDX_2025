@@ -388,12 +388,13 @@ Below are additional resources on threat modeling
 
 \begin_deeper
 \begin_layout Itemize
-This zine is tailored towards activists and I think covers threat modeling well and doesn't get wrapped up in computery stuff:
+This zine explores threat modeling in more detail and is tailored towards activists:
  https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
 \end_layout
 
 \begin_layout Itemize
-One potential place to research threats and mitigation's for activism-type activities https://www.notrace.how/threat-library/
+One potential place to research threats and mitigation's for activism-type activities:
+ https://www.notrace.how/threat-library/
 \end_layout
 
 \end_deeper
