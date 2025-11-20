@@ -121,9 +121,9 @@ I am running this workshop to equip my community with tools to better protect it
 
 \begin_layout Standard
 That said,
- it can be very easy to doomspiral,
- hyperfocus on worst case scenarios,
- become fixated on mythical 
+ it can be very easy to become overwhelmed and fatalistic,
+ obsess over worst case scenarios,
+ or become fixated on mythical 
 \begin_inset Quotes eld
 \end_inset
 
@@ -139,18 +139,25 @@ correct
 \begin_inset Quotes erd
 \end_inset
 
- tools and processes,
- or to become overwhelmed and disengage entirely.
- 
+ tools and processes.
+ (The only way to be perfectly secure is to talk to no one,
+ do nothing of consequence,
+ and never take a single risk).
 \end_layout
 
 \begin_layout Standard
-We learn best when we are open,
+We learn best when we are,
  curious,
- and playful.
- Stepping into that headspace for this workshop may be hard,
- and will likely be harder for some than others.
- Meet yourself where you're at.
+ playful,
+ and consistently engaged.
+ While reading a list of expert recommendations once probably makes you a little safer than nothing,
+ you are far better served improving your safety skills a little bit every week.
+ Trying new tools,
+ researching,
+ and discussing it with people,
+ especially people you don't necessarily agree with.
+ If you find learning about computers or online privacy miserable,
+ you aren't going to do any of that.
  
 \end_layout
 
@@ -199,33 +206,8 @@ Retain no data between sessions to avoid leaving traces of what you use it for.
 Route all internet traffic over the TOR network to provide privacy and anonymity while using the internet.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Why should I use Tails?
-\end_layout
-
-\begin_layout Standard
-I can't answer that question for you.
- Only you can.
-\end_layout
-
-\begin_layout Standard
-Tails is a tool designed to mitigate specific threats.
-\end_layout
-
-\begin_layout Standard
-Weather you care about mitigating those specific threats depends on you,
- your specific risk profile and risk tolerance.
-\end_layout
-
-\begin_layout Subsection
-Some Terminology
+Terminology
 \end_layout
 
 \begin_layout Standard
@@ -242,7 +224,7 @@ Anonymity - Who is talking to who?
 Privacy - What are they talking about?
 \end_layout
 
-\begin_layout Verse
+\begin_layout Itemize
 Security - How resistant is their communication medium to interventions that downgrade it in potentially several ways
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -282,6 +264,97 @@ Otherwise co-opt or use the medium for unintended purposes.
 
 \end_layout
 
+\begin_layout Itemize
+Encrypted in Transit
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Most websites use a technology called SSL,
+ using the 
+\begin_inset Quotes eld
+\end_inset
+
+HTTPS
+\begin_inset Quotes erd
+\end_inset
+
+ prefix.
+ This means the traffic is encrypted between the client and the server,
+ and can't be read by the ISP or anyone else listening on the network.
+ It can still be read by the server.
+ 
+\end_layout
+
+\begin_layout Itemize
+For example,
+ Discord is a messaging app that is encrypted in transit.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+End-To-End Encrypted (E2EE)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Services that are end-to-end encrypted mean the data is encrypted in transit,
+ and also encrypted on the server.
+ This is usually used to refer to messaging apps where only the intended recipient can decrypt the message.
+ Typically a server is involved,
+ routing the encrypted data from one client to another.
+ End-to-end encrypted servcies offer privacy for the contents of messages,
+ but dont usually offer anonymity,
+ as metadata like who is talking to who,
+ and when,
+ is still visible to the server.
+\end_layout
+
+\begin_layout Itemize
+Signal is end-to-end encrypted,
+ but not anonymous,
+ and requires users to provide a phone number to use the service.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Peer-To-Peer (P2P)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Services that are peer-to-peer don't involve a central server at all.
+ Instead individual clients connect to directly to one another.
+ Usually this means both parties must be online at the same time,
+ and have a way of pairing their devices either in person at a previous point,
+ or via a different communication method.
+\end_layout
+
+\begin_layout Itemize
+Briar is a peer-to-peer messenger app.
+\end_layout
+
+\begin_layout Itemize
+SimpleX and Delta Chat are mostly peer-to-peer,
+ relying on servers to connect peers but take steps to run multiple servers by different parties and minimize the amount of metadata any individual server has.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Difficulty Differential
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mitigation's that are easy for me,
+ but hard for an attacker are the most valuable.
+ Some mitigation's will be more like 50/50,
+ these are less useful but not useless depending on your needs.
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Risk
 \end_layout
@@ -399,8 +472,9 @@ One potential place to research threats and mitigation's for activism-type activ
 
 \end_deeper
 \end_deeper
-\begin_layout Subsection
-Things Tails Can and Cannot Mitigate
+\begin_layout Section
+Why Should I Use Tails?
+ Things Tails Can and Cannot do.
 \end_layout
 
 \begin_layout Subsubsection
@@ -412,11 +486,13 @@ Keeps web traffic anonymous and private from internet service providers or other
 \end_layout
 
 \begin_layout Itemize
-Keeps web traffic anonymous from the website you are visiting.
+Keeps you anonymous from the website you are visiting,
+ provided you don't supply identifying information.
 \end_layout
 
 \begin_layout Itemize
-Provides decent security for most everyday potential threats.
+Provides decent security against most threats.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -428,7 +504,7 @@ Hide from your Internet Service provider you are using TOR.
 \end_layout
 
 \begin_layout Itemize
-Hide from you the website you are visiting using TOR.
+Hide from the website you are visiting that you are using TOR.
 \end_layout
 
 \begin_layout Itemize
@@ -436,7 +512,7 @@ Protect your anonymity if you do something that unmasks you.
 \end_layout
 
 \begin_layout Itemize
-Provide security against people with nationstate level resources.
+Provide security against threat actors with nation-state level resources.
 \end_layout
 
 \begin_layout Part
@@ -447,16 +523,79 @@ Creating and Setting up Tails
 Downloading the Tails ISO
 \end_layout
 
+\begin_layout Standard
+https://tails.net/install/download/index.en.html
+\end_layout
+
+\begin_layout Standard
+Verify the download!
+\end_layout
+
+\begin_layout Standard
+Either using the online verifier or OpenPGP
+\end_layout
+
 \begin_layout Section
 Flashing the Tails USB
 \end_layout
 
+\begin_layout Itemize
+For windows use Rufus
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://tails.net/install/windows/index.en.html
+\end_layout
+
+\begin_layout Itemize
+https://rufus.ie/en/
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+For Mac use Raspberry Pi Imager
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://tails.net/install/mac/index.en.html
+\end_layout
+
+\begin_layout Itemize
+https://www.raspberrypi.com/software/
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+For Linux you can use GNOME Disks or `dd`
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://tails.net/install/linux/index.en.html
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Booting From the USB
 \end_layout
 
+\begin_layout Standard
+Include that guide I saw in TFA on common buttons for bringing up the Quick Boot Options.
+ 
+\end_layout
+
 \begin_layout Section
 Selecting Boot-up Options
+\end_layout
+
+\begin_layout Standard
+Create encrypted partition
+\end_layout
+
+\begin_layout Standard
+Mention enabling root password for installing additional software.
 \end_layout
 
 \begin_layout Part
@@ -472,7 +611,7 @@ Notes on how to not unmask yourself.
 \end_layout
 
 \begin_layout Section
-Sending Messages
+Setting up a Password Manager with KeePassXC
 \end_layout
 
 \begin_layout Section
@@ -483,8 +622,95 @@ Using Dangerzone
 Using OnionShare
 \end_layout
 
-\begin_layout Section
-Setting up a Password Manager with KeePassXC
+\begin_layout Standard
+Ways to share the OnionShare URL and or private key:
+\end_layout
+
+\begin_layout Standard
+Note:
+ none of these options are end-to-end encrypted.
+\end_layout
+
+\begin_layout Itemize
+A throwaway or anonymous email address.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tuta mail lets you create email addresses without an additional verification info.
+ You just have to wait for a few days to complete verification.
+\end_layout
+
+\begin_layout Itemize
+Gurrillamail.com lets you create disposable email addresses.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+IRC
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Irc usually is not encrypted in transit.
+ Using it inside of Tails forces it over TOR which does provide encryption in transit,
+ but it isn't end-to-end encrypted,
+ and you should be aware of if your recipient will be accessing IRC over TOR as well.
+ 
+\end_layout
+
+\begin_layout Itemize
+The advantage to IRC is that throwaway accounts can be made relatively easily.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Riseup pad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You still have to send the URL/private key for the Riseup pad,
+ but it can be pre-shared either in person or via a different means.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Print and physically deliver by hand or by mail.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The recipient will still need to hand type the URL/private key.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The following methods require either installing additional software into your Tails Usb,
+ or copying files to an extra usb to transferring to another computer that has this software,
+ both of which present different kinds of security compromises.
+\end_layout
+
+\begin_layout Itemize
+Signal (or other messenger app like Discord,
+ ect.)
+\end_layout
+
+\begin_layout Itemize
+Magic Wormhole
+\end_layout
+
+\begin_layout Itemize
+Bitwarden Send
+\end_layout
+
+\begin_layout Itemize
+Warpinator (Winpinator for Windows)
+\end_layout
+
+\begin_layout Itemize
+Ect.
 \end_layout
 
 \begin_layout Section
