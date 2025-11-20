@@ -419,14 +419,6 @@ Keeps web traffic anonymous from the website you are visiting.
 Provides decent security for most everyday potential threats.
 \end_layout
 
-\begin_layout Itemize
-Note on LUKS encryption.
-\end_layout
-
-\begin_layout Itemize
-Note on Monero.
-\end_layout
-
 \begin_layout Subsubsection
 What Tails Doesn't do well:
 \end_layout
@@ -467,14 +459,6 @@ Booting From the USB
 Selecting Boot-up Options
 \end_layout
 
-\begin_layout Section
-Creating a LUKS Encrypted Drive
-\end_layout
-
-\begin_layout Section
-Setting up a Password Manager with KeePassXC
-\end_layout
-
 \begin_layout Part
 Using Tails
 \end_layout
@@ -488,7 +472,7 @@ Notes on how to not unmask yourself.
 \end_layout
 
 \begin_layout Section
-Sending Encrypted Messages
+Sending Messages
 \end_layout
 
 \begin_layout Section
@@ -500,7 +484,11 @@ Using OnionShare
 \end_layout
 
 \begin_layout Section
-Using Electrum Wallet
+Setting up a Password Manager with KeePassXC
+\end_layout
+
+\begin_layout Section
+Creating a LUKS Encrypted Drive
 \end_layout
 
 \begin_layout Bibliography
