@@ -418,6 +418,7 @@ threats
 \end_inset
 
  to goals and selecting countermeasures.
+ An ongoing process that should be refined over time as more information is available.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-2"
@@ -442,11 +443,18 @@ Ex:
 \end_deeper
 \begin_layout Itemize
 Who or what might oppose or complicate those goals?
- 
+ What kinds of tools do they have?
+ What risk do they pose?
+ What would the impact be?
 \end_layout
 
 \begin_layout Itemize
 What can we do about it?
+ Do we have a mitigation that brings risk down to negligible levels?
+ What about mitigations that reduces risk a little,
+ but still has a tangible likelihood?
+ Or is this a risk we are forced to accept?
+ 
 \end_layout
 
 \begin_layout Itemize
