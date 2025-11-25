@@ -566,7 +566,7 @@ This zine explores threat modeling in more detail and is tailored towards activi
 \end_layout
 
 \begin_layout Itemize
-One potential place to research threats and mitigation's for activism-type activities:
+One potential place to research threats and mitigations:
  https://www.notrace.how/threat-library/
 \end_layout
 
@@ -641,6 +641,23 @@ Booting From the USB
 \begin_layout Standard
 Include that guide I saw in TFA on common buttons for bringing up the Quick Boot Options.
  
+\end_layout
+
+\begin_layout Standard
+Booting from within windows:
+\end_layout
+
+\begin_layout Standard
+https://tails.net/doc/first_steps/start/pc/index.en.html#windows-restart
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/CommonBootKeys.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
