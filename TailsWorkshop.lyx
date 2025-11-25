@@ -351,7 +351,6 @@ Mitigation's that are easy for me,
  but hard for an attacker are the most valuable.
  Some mitigation's will be more like 50/50,
  these are less useful but not useless depending on your needs.
- 
 \end_layout
 
 \end_deeper
@@ -404,12 +403,104 @@ literal "false"
 
 \end_deeper
 \begin_layout Itemize
-Threat Model
+TOR
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-A structured way of identifying 
+TOR stands for 
+\begin_inset Quotes eld
+\end_inset
+
+The Onion Network
+\begin_inset Quotes erd
+\end_inset
+
+ and is a privacy preserving network.
+ The TOR network is typically accessed with the TOR browser.
+ TOR routes all traffic through at least 3 encrypted relay nodes before being routed to its final destination.
+ Traffic is encrypted in layers,
+ with each relay node removing a single layer of encryption.
+ This is designed to prevent any one node from knowing the source and destination of your web traffic.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Onion Services
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Onion services are websites that can only be reached via the TOR network.
+ Some websites are only accessible via Onion services (the so-called 
+\begin_inset Quotes eld
+\end_inset
+
+Dark web
+\begin_inset Quotes erd
+\end_inset
+
+),
+ while other websites have clearnet sites,
+ while also offering Onion sites as a privacy preserving option for users.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Why Should I Use Tails?
+ Things Tails Can and Cannot do.
+\end_layout
+
+\begin_layout Subsection
+What Tails Does well:
+\end_layout
+
+\begin_layout Itemize
+Keeps web traffic anonymous and private from internet service providers or other people on the network.
+\end_layout
+
+\begin_layout Itemize
+Keeps you anonymous from the website you are visiting,
+ provided you don't supply identifying information.
+\end_layout
+
+\begin_layout Itemize
+Provides decent security against most threats.
+ 
+\end_layout
+
+\begin_layout Subsection
+What Tails Doesn't do well:
+\end_layout
+
+\begin_layout Itemize
+Hide from your Internet Service provider you are using TOR.
+\end_layout
+
+\begin_layout Itemize
+Hide from the website you are visiting that you are using TOR.
+\end_layout
+
+\begin_layout Itemize
+Protect your anonymity if you do something that unmasks you.
+\end_layout
+
+\begin_layout Itemize
+Provide security against threat actors with nation-state level resources.
+\end_layout
+
+\begin_layout Subsection
+Threat Model
+\end_layout
+
+\begin_layout Standard
+Whether Tails is an appropriate tool for you depends on what you are trying to do and your threat model.
+\end_layout
+
+\begin_layout Itemize
+A Threat Model is a structured way of identify a goal,
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -417,8 +508,10 @@ threats
 \begin_inset Quotes erd
 \end_inset
 
- to goals and selecting countermeasures.
- An ongoing process that should be refined over time as more information is available.
+ to that goal,
+ considering and selecting countermeasures if possible,
+ and revising your understanding over time as new info becomes available.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-2"
@@ -440,7 +533,6 @@ Ex:
  Feeding the Homeless
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Who or what might oppose or complicate those goals?
  What kinds of tools do they have?
@@ -480,49 +572,6 @@ One potential place to research threats and mitigation's for activism-type activ
 
 \end_deeper
 \end_deeper
-\begin_layout Section
-Why Should I Use Tails?
- Things Tails Can and Cannot do.
-\end_layout
-
-\begin_layout Subsubsection
-What Tails Does well:
-\end_layout
-
-\begin_layout Itemize
-Keeps web traffic anonymous and private from internet service providers or other people on the network.
-\end_layout
-
-\begin_layout Itemize
-Keeps you anonymous from the website you are visiting,
- provided you don't supply identifying information.
-\end_layout
-
-\begin_layout Itemize
-Provides decent security against most threats.
- 
-\end_layout
-
-\begin_layout Subsubsection
-What Tails Doesn't do well:
-\end_layout
-
-\begin_layout Itemize
-Hide from your Internet Service provider you are using TOR.
-\end_layout
-
-\begin_layout Itemize
-Hide from the website you are visiting that you are using TOR.
-\end_layout
-
-\begin_layout Itemize
-Protect your anonymity if you do something that unmasks you.
-\end_layout
-
-\begin_layout Itemize
-Provide security against threat actors with nation-state level resources.
-\end_layout
-
 \begin_layout Part
 Creating and Setting up Tails
 \end_layout
@@ -618,6 +667,14 @@ Using TOR
 Notes on how to not unmask yourself.
 \end_layout
 
+\begin_layout Standard
+Onion Sites
+\end_layout
+
+\begin_layout Standard
+https://github.com/alecmuffett/real-world-onion-sites?tab=readme-ov-file#education
+\end_layout
+
 \begin_layout Section
 Setting up a Password Manager with KeePassXC
 \end_layout
@@ -631,7 +688,7 @@ Using OnionShare
 \end_layout
 
 \begin_layout Standard
-Ways to share the OnionShare URL and or private key:
+Ways to share the OnionShare URL and or private key from within TailsOS.
 \end_layout
 
 \begin_layout Standard
@@ -655,25 +712,6 @@ Gurrillamail.com lets you create disposable email addresses.
 
 \end_deeper
 \begin_layout Itemize
-IRC
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Irc usually is not encrypted in transit.
- Using it inside of Tails forces it over TOR which does provide encryption in transit,
- but it isn't end-to-end encrypted,
- and you should be aware of if your recipient will be accessing IRC over TOR as well.
- 
-\end_layout
-
-\begin_layout Itemize
-The advantage to IRC is that throwaway accounts can be made relatively easily.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
 Riseup pad
 \end_layout
 
@@ -685,15 +723,9 @@ You still have to send the URL/private key for the Riseup pad,
 
 \end_deeper
 \begin_layout Itemize
-Print and physically deliver by hand or by mail.
+Browser based chat
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-The recipient will still need to hand type the URL/private key.
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 The following methods require either installing additional software into your Tails Usb,
  or copying files to an extra usb to transferring to another computer that has this software,
