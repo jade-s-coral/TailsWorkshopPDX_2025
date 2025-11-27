@@ -438,7 +438,7 @@ x
 \end_layout
 
 \begin_layout Standard
-Likelyhood:
+Likelihood:
  Depends on your age,
  lifestyle,
  and other factors.
@@ -652,12 +652,17 @@ Creating and Setting up Tails
 Downloading the Tails ISO
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Navigate to Tails.net and download the Tails ISO.
- https://tails.net/install/download/index.en.html
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Itemize
+https://tails.net/install/download/index.en.html
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Verify the download using the verification tool on the download page.
 \end_layout
 
