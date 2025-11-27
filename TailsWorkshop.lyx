@@ -499,18 +499,17 @@ Whether Tails is an appropriate tool for you depends on what you are trying to d
 \end_layout
 
 \begin_layout Itemize
-A Threat Model is a structured way of identify a goal,
- 
+A Threat Model is a structured way of thinking about your goals and obstacles or people who may not want to you accomplish those goals.
+ Several formalized frameworks exist.
+ I'll be using the framework outlined in the Zine 
 \begin_inset Quotes eld
 \end_inset
 
-threats
+Threat Modeling Fundamentals
 \begin_inset Quotes erd
 \end_inset
 
- to that goal,
- considering and selecting countermeasures if possible,
- and revising your understanding over time as new info becomes available.
+ by Håkan Geijer.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -528,11 +527,6 @@ What are our goals?
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Ex:
- Feeding the Homeless
-\end_layout
-
 \begin_layout Itemize
 Who or what might oppose or complicate those goals?
  What kinds of tools do they have?
@@ -561,6 +555,18 @@ Below are additional resources on threat modeling
 
 \begin_deeper
 \begin_layout Itemize
+Frameworks:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+HARMS framework focuses less on technical treats and more on human impact:
+ https://arxiv.org/html/2502.07116v1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 This zine explores threat modeling in more detail and is tailored towards activists:
  https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
 \end_layout
@@ -581,15 +587,12 @@ Downloading the Tails ISO
 \end_layout
 
 \begin_layout Standard
-https://tails.net/install/download/index.en.html
+Navigate to Tails.net and download the Tails ISO.
+ https://tails.net/install/download/index.en.html
 \end_layout
 
 \begin_layout Standard
-Verify the download!
-\end_layout
-
-\begin_layout Standard
-Either using the online verifier or OpenPGP
+Verify the download using the verification tool on the download page.
 \end_layout
 
 \begin_layout Section
@@ -597,7 +600,7 @@ Flashing the Tails USB
 \end_layout
 
 \begin_layout Itemize
-For windows use Rufus
+For Windows use Rufus
 \end_layout
 
 \begin_deeper
@@ -639,11 +642,110 @@ Booting From the USB
 \end_layout
 
 \begin_layout Standard
-Booting from within windows:
+There are a few ways to boot from the USB,
+ depending on the kind of laptop you have.
+\end_layout
+
+\begin_layout Subsection
+Booting from within Windows
 \end_layout
 
 \begin_layout Standard
-https://tails.net/doc/first_steps/start/pc/index.en.html#windows-restart
+If you are using Windows 8 or 10 you can start the process of booting to Tails from within Windows.
+ https://tails.net/doc/first_steps/start/pc/index.en.html#windows-restart
+\end_layout
+
+\begin_layout Enumerate
+Make sure the Tails USB is plugged in.
+\end_layout
+
+\begin_layout Enumerate
+Click Start
+\end_layout
+
+\begin_layout Enumerate
+Hold 
+\begin_inset Quotes eld
+\end_inset
+
+Shift
+\begin_inset Quotes erd
+\end_inset
+
+ while selecting 
+\begin_inset Quotes eld
+\end_inset
+
+Power->Restart
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The machine will restart,
+ but will boot to a menu of diagnostic options.
+ Select 
+\begin_inset Quotes eld
+\end_inset
+
+Use a device
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If your Tails USB stick comes up in the list of options,
+ select it.
+\end_layout
+
+\begin_layout Enumerate
+Otherwise,
+ if 
+\begin_inset Quotes eld
+\end_inset
+
+Boot Menu
+\begin_inset Quotes erd
+\end_inset
+
+ is an option,
+ select that.
+\end_layout
+
+\begin_layout Enumerate
+If neither of those options are present,
+ you will have to try launching Tails using the Boot Menu Key.
+\end_layout
+
+\begin_layout Subsection
+Booting with the Boot Menu Key
+\end_layout
+
+\begin_layout Enumerate
+Plug in the Tails USB.
+\end_layout
+
+\begin_layout Enumerate
+Shut down the computer.
+\end_layout
+
+\begin_layout Enumerate
+Computers from various manufacturers use different buttons to enable the user to bring up a boot menu when the computer starts up.
+ Refer to the table below for common buttons associated with different manufacturers.
+ You may have to experiment with different buttons to find the right one for your computer.
+\end_layout
+
+\begin_layout Enumerate
+Start the computer,
+ repeatedly mashing the boot menu key for your computer.
+ If successful,
+ a menu of boot options will come up.
+ You may fail the first few attempts if you miss the window or if the boot menu key is an unexpected key.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -661,6 +763,125 @@ literal "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Changing the Boot Order in the BIOS/UEFI menu
+\end_layout
+
+\begin_layout Enumerate
+If the other approaches fail,
+ you can access your computer BIOS or UEFI and change the order of boot devices.
+\end_layout
+
+\begin_layout Enumerate
+To bring up your BIOS/UEFI,
+ a specific button needs to be pressed when the machine starts.
+ Below is a table of the common buttons for bringing up the BIOS/UEFI.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ASRock:
+ F2 or DEL
+\end_layout
+
+\begin_layout Enumerate
+ASUS:
+ F2 for all PCs,
+ F2 or DEL for Motherboards
+\end_layout
+
+\begin_layout Enumerate
+Acer:
+ F2 or DEL
+\end_layout
+
+\begin_layout Enumerate
+Dell:
+ F2 or F12
+\end_layout
+
+\begin_layout Enumerate
+ECS:
+ DEL
+\end_layout
+
+\begin_layout Enumerate
+Gigabyte / Aorus:
+ F2 or DEL
+\end_layout
+
+\begin_layout Enumerate
+HP:
+ F10
+\end_layout
+
+\begin_layout Enumerate
+Lenovo (Consumer Laptops):
+ F2 or Fn + F2
+\end_layout
+
+\begin_layout Enumerate
+Lenovo (Desktops):
+ F1
+\end_layout
+
+\begin_layout Enumerate
+Lenovo (ThinkPads):
+ Enter then F1.
+\end_layout
+
+\begin_layout Enumerate
+MSI:
+ DEL for motherboards and PCs
+\end_layout
+
+\begin_layout Enumerate
+Microsoft Surface Tablets:
+ Press and hold volume up button.
+\end_layout
+
+\begin_layout Enumerate
+Origin PC:
+ F2
+\end_layout
+
+\begin_layout Enumerate
+Samsung:
+ F2
+\end_layout
+
+\begin_layout Enumerate
+Toshiba:
+ F2
+\end_layout
+
+\begin_layout Enumerate
+Zotac:
+ DEL
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Power on your computer and hit the button over and over,
+ this should bring up the BIOS/UEFI for your machine.
+ You may have to experiment with different buttons to find the right one.
+\end_layout
+
+\begin_layout Enumerate
+Once in your BIOS/UEFI,
+ there should be an option to manipulate the order of default boot devices.
+ You will want to make USB the highest priority boot device.
 \end_layout
 
 \begin_layout Section
@@ -684,11 +905,19 @@ Using TOR
 \end_layout
 
 \begin_layout Standard
-Notes on how to not unmask yourself.
+
 \end_layout
 
 \begin_layout Standard
-Onion Sites
+Onion URLs are web services that are served over TOR,
+ and only accessible via TOR.
+ Heres an example,
+ the onion address for Duck-Duck-Go:
+ https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
+\end_layout
+
+\begin_layout Standard
+Here is a gitub repo of onion sites:
 \end_layout
 
 \begin_layout Standard
@@ -847,7 +1076,17 @@ key "key-4"
 
 \end_inset
 
-https://tails.net/doc/first_steps/start/pc/index.en.html#boot-menu-key
+ https://tails.net/doc/first_steps/start/pc/index.en.html#boot-menu-key
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html
 \end_layout
 
 \end_body
