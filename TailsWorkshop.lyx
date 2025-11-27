@@ -87,11 +87,25 @@
 \begin_body
 
 \begin_layout Title
-Community Tails Workshop
+
+\size giant
+PDX Community Tails OS Workshop
 \end_layout
 
 \begin_layout Date
-v0.1
+v0.2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/Tree.png
+	scale 200
+	BoundingBox -60bp 0bp 520bp 787bp
+	clip
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -258,6 +272,16 @@ Otherwise co-opt or use the medium for unintended purposes.
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Graphics
+	filename images/CritterAndCable.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -292,6 +316,18 @@ For example,
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/SSLDiagram.png
+	scale 70
+	BoundingBox 80bp 0bp 2237bp 630bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 End-To-End Encrypted (E2EE)
 \end_layout
@@ -317,6 +353,16 @@ Signal is end-to-end encrypted,
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/EndToEndDiagram.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Peer-To-Peer (P2P)
 \end_layout
@@ -341,6 +387,16 @@ SimpleX and Delta Chat are mostly peer-to-peer,
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/PeerToPeerDiagram.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Difficulty Differential
 \end_layout
@@ -549,6 +605,17 @@ Is our threat model well informed?
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/ThreatModelDiagram.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Below are additional resources on threat modeling
 \end_layout
@@ -565,7 +632,6 @@ HARMS framework focuses less on technical treats and more on human impact:
  https://arxiv.org/html/2502.07116v1
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 This zine explores threat modeling in more detail and is tailored towards activists:
  https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
