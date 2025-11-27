@@ -900,24 +900,157 @@ Mention enabling root password for installing additional software.
 Using Tails
 \end_layout
 
+\begin_layout Standard
+Tails has a handful of tools for doing basic computing tasks,
+ the TOR browser for web surfing,
+ a basic Office suite,
+ an offline password manager,
+ sound and video players,
+ and some system tools.
+\end_layout
+
 \begin_layout Section
 Using TOR
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+Connecting to TOR
+\end_layout
 
+\begin_layout Standard
+When you first launch TOR,
+ you will be presented with a screen for configuring your TOR session.
+ If you are not connected to the Wifi or a network,
+ do that first.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/ConnectingToTor.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the following menu,
+ select 
+\begin_inset Quotes eld
+\end_inset
+
+Connect to TOR Automatically
+\begin_inset Quotes erd
+\end_inset
+
+.
+ You will be given the option to connect with a TOR bridge.
+ TOR bridges are essentially a VPN for the first hop of the TOR circuit,
+ providing a way to access the TOR network in countries that block it,
+ or if you want to hide from your ISP you are using TOR.
+ This may or may not be necessary given your threat model and risk tolerance.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/ConnectToTorDefaults.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hit 
+\begin_inset Quotes eld
+\end_inset
+
+Connect
+\begin_inset Quotes erd
+\end_inset
+
+ and the system will begin setting up your TOR circuit.
+ It may take several minutes to complete.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/ConnectToTorInProgress.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sites that Block TOR
+\end_layout
+
+\begin_layout Standard
+Some sites block access from the TOR network.
+ One thing you can try is to use a new TOR circuit.
+ Not all TOR exit nodes may be blocked by the site you are trying to visit.
+ To request a new TOR circuit,
+ select the options menu in the top right hand corner of the TOR browser,
+ and select 
+\begin_inset Quotes eld
+\end_inset
+
+New Tor Circuit for this Site
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Note,
+ if you are trying to start a new session to preserve anonymity,
+ it is safer to restart TOR completely or restart Tails.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/NewTorCircuitCropped.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Preserving Anonymity
+\end_layout
+
+\begin_layout Standard
+Tails can't preserve your anonymity online if you supply information that identifies you.
+ If you are trying to remain anonymous during your session,
+ don't log into any accounts that you use on other devices.
+ If you create an account inside of a TOR session,
+ don't log into that account outside of TOR.
+ 
+\end_layout
+
+\begin_layout Subsection
+Onion Links
 \end_layout
 
 \begin_layout Standard
 Onion URLs are web services that are served over TOR,
  and only accessible via TOR.
- Heres an example,
+ Here's an example,
  the onion address for Duck-Duck-Go:
  https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
 \end_layout
 
 \begin_layout Standard
-Here is a gitub repo of onion sites:
+Here is a Github repo of onion sites:
 \end_layout
 
 \begin_layout Standard
@@ -929,7 +1062,7 @@ Setting up a Password Manager with KeePassXC
 \end_layout
 
 \begin_layout Section
-Using Dangerzone
+Using MetaData Cleaner
 \end_layout
 
 \begin_layout Section
@@ -993,7 +1126,7 @@ Magic Wormhole
 \end_layout
 
 \begin_layout Itemize
-Bitwarden Send
+Bitwarden Sendx`
 \end_layout
 
 \begin_layout Itemize
