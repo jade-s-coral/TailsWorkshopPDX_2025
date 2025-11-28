@@ -160,13 +160,12 @@ correct
 \end_layout
 
 \begin_layout Standard
-We learn best when we are,
- curious,
+We learn best when we are curious,
  playful,
  and consistently engaged.
  While reading a list of expert recommendations once probably makes you a little safer than nothing,
- you are far better served improving your safety skills a little bit every week.
- Trying new tools,
+ you are far better served improving your safety skills a little bit every week:
+ trying new tools,
  researching,
  and discussing it with people,
  especially people you don't necessarily agree with.
@@ -197,13 +196,13 @@ What Is Tails?
 \end_layout
 
 \begin_layout Standard
-Tails (The Amnesic & Incognito Live System) is a tool for mitigating digital surveillance and censorship.
+Tails (The Amnesic Incognito Live System) is a tool for mitigating digital surveillance and censorship.
 \end_layout
 
 \begin_layout Standard
 It is a bootable Live USB.
  You plug it into a computer,
- and boot into a temporary separate Operating System.
+ and boot into a temporary separate operating system.
  
 \end_layout
 
@@ -217,7 +216,7 @@ Retain no data between sessions to avoid leaving traces of what you use it for.
 \end_layout
 
 \begin_layout Itemize
-Route all internet traffic over the TOR network to provide privacy and anonymity while using the internet.
+Route all internet traffic over the Tor network to provide privacy and anonymity while using the internet.
 \end_layout
 
 \begin_layout Section
@@ -229,6 +228,70 @@ Some very quick definitions.
  A shared understanding of these terms makes us more effective when talking about digital privacy.
 \end_layout
 
+\begin_layout Itemize
+Tor
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tor stands for 
+\begin_inset Quotes eld
+\end_inset
+
+The Onion Router
+\begin_inset Quotes erd
+\end_inset
+
+ and is a privacy preserving network.
+ The easiest way to to access webpages over Tor is with the Tor browser.
+ Tor routes all traffic through at least three encrypted relay nodes before being routed to its final destination.
+ Traffic is encrypted in layers,
+ with each relay node removing a single layer of encryption.
+ This is designed to prevent any one node from knowing the source and destination of your web traffic.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Onion Services
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Onion services,
+ (also called hidden services),
+ are web services that can only be reached via the Tor network.
+ Some services are only accessible via Onion services (the so-called 
+\begin_inset Quotes eld
+\end_inset
+
+Dark web
+\begin_inset Quotes erd
+\end_inset
+
+),
+ while other services have clearnet versions,
+ while also offering an Onion service as a privacy preserving option for users.
+ For example,
+ here is the onion address for the search engine Duck Duck Go:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Github repository of onion sites:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://github.com/alecmuffett/real-world-onion-sites
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Itemize
 Anonymity - Who is talking to who?
  Metadata.
@@ -307,7 +370,9 @@ HTTPS
  This means the traffic is encrypted between the client and the server,
  and can't be read by the ISP or anyone else listening on the network.
  It can still be read by the server.
- 
+ While the traffic is private over the network to the server,
+ it is not anonymous over the network,
+ as the destination IP and DNS requests associated with the request are visible.
 \end_layout
 
 \begin_layout Itemize
@@ -339,8 +404,8 @@ Services that are end-to-end encrypted mean the data is encrypted in transit,
  This is usually used to refer to messaging apps where only the intended recipient can decrypt the message.
  Typically a server is involved,
  routing the encrypted data from one client to another.
- End-to-end encrypted servcies offer privacy for the contents of messages,
- but dont usually offer anonymity,
+ End-to-end encrypted services offer privacy for the contents of messages,
+ but don't usually offer anonymity,
  as metadata like who is talking to who,
  and when,
  is still visible to the server.
@@ -370,10 +435,20 @@ Peer-To-Peer (P2P)
 \begin_deeper
 \begin_layout Itemize
 Services that are peer-to-peer don't involve a central server at all.
- Instead individual clients connect to directly to one another.
+ Instead individual clients connect directly to one another.
  Usually this means both parties must be online at the same time,
  and have a way of pairing their devices either in person at a previous point,
- or via a different communication method.
+ or via a different,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+out-of-band
+\begin_inset Quotes erd
+\end_inset
+
+,
+ communication method.
 \end_layout
 
 \begin_layout Itemize
@@ -403,9 +478,8 @@ Difficulty Differential
 
 \begin_deeper
 \begin_layout Itemize
-Mitigation's that are easy for me,
- but hard for an attacker are the most valuable.
- Some mitigation's will be more like 50/50,
+Mitigations that are easy for me but hard for an attacker are the most valuable.
+ Some mitigations will be more like 50/50,
  these are less useful but not useless depending on your needs.
 \end_layout
 
@@ -415,26 +489,35 @@ Risk
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
+Almost everything we do involves some level of risk.
+ In some ways,
+ we are experts at taking risks.
+ In other ways,
+ humans are pretty terrible at it.
+ It can be challenging to accurately gauge risk or have productive conversations about it.
+ Below is one definition of risk I find helpful for talking about and thinking about taking risks.
+ 
+\end_layout
+
+\begin_layout Itemize
 Risk = Cost of bad thing * Likelihood of bad thing
 \end_layout
 
-\begin_layout Standard
-Examples:
+\begin_layout Itemize
+Example:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 Risk of getting in a car crash:
-\end_layout
-
-\begin_layout Standard
-Cost:
+ Cost:
  Pretty high,
  ranges from injury or death depending on the kind of accident.
 \end_layout
 
 \begin_layout Standard
-x 
+x
 \end_layout
 
 \begin_layout Standard
@@ -445,7 +528,7 @@ Likelihood:
  In the United States it ranked as the 13th leading cause of death among all causes in 2016 and 2017.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "1"
+key "0"
 literal "false"
 
 \end_inset
@@ -459,57 +542,48 @@ literal "false"
 
 \end_deeper
 \begin_layout Itemize
-TOR
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-TOR stands for 
-\begin_inset Quotes eld
-\end_inset
-
-The Onion Network
-\begin_inset Quotes erd
-\end_inset
-
- and is a privacy preserving network.
- The TOR network is typically accessed with the TOR browser.
- TOR routes all traffic through at least 3 encrypted relay nodes before being routed to its final destination.
- Traffic is encrypted in layers,
- with each relay node removing a single layer of encryption.
- This is designed to prevent any one node from knowing the source and destination of your web traffic.
+Some risks have a harder to quantify likelihood than others.
+ The likelihood can also change over time or from person to person.
+ Similarly,
+ the impact of a risk can differ from person to person and sometimes be difficult to estimate.
+ All of these factors can make estimating risk a challenge.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Onion Services
+Risk Tolerance
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Onion services are websites that can only be reached via the TOR network.
- Some websites are only accessible via Onion services (the so-called 
-\begin_inset Quotes eld
-\end_inset
-
-Dark web
-\begin_inset Quotes erd
-\end_inset
-
-),
- while other websites have clearnet sites,
- while also offering Onion sites as a privacy preserving option for users.
+Everybody's tolerance for risk will be different,
+ both in general and with regards to specific risks.
+ People's individual health,
+ privilege,
+ family or other responsibilities,
+ and other life factors can all influence how tolerant to accepting risk they are.
+ While getting doxxed isn't fun for anyone,
+ some people may find a chance of getting doxxed an acceptable risk,
+ while for others it may severely impact their ability to find work and otherwise completely derail their life.
+ When engaging in or discussing risk-taking behavior,
+ it is important to be honest with yourself about the level of risk you can tolerate and endeavor to not over or under estimate.
+ It is also important to be mindful of other's risk tolerance when discussing risk-taking behaviors.
+ While its healthy to have a dialogue,
+ even a critical one,
+ about realistic risk tolerance,
+ be wary of pressuring others into accepting more or less risk,
+ or assuming that everyone has the same risk tolerance you do.
  
 \end_layout
 
 \end_deeper
 \begin_layout Section
 Why Should I Use Tails?
- Things Tails Can and Cannot do.
+ Things Tails Can and Cannot Do.
 \end_layout
 
 \begin_layout Subsection
-What Tails Does well:
+What Tails Does Well:
 \end_layout
 
 \begin_layout Itemize
@@ -527,15 +601,15 @@ Provides decent security against most threats.
 \end_layout
 
 \begin_layout Subsection
-What Tails Doesn't do well:
+What Tails Doesn't Do Well:
 \end_layout
 
 \begin_layout Itemize
-Hide from your Internet Service provider you are using TOR.
+Hide from your Internet Service provider you are using Tor.
 \end_layout
 
 \begin_layout Itemize
-Hide from the website you are visiting that you are using TOR.
+Hide from the website you are visiting that you are using Tor.
 \end_layout
 
 \begin_layout Itemize
@@ -555,7 +629,13 @@ Whether Tails is an appropriate tool for you depends on what you are trying to d
 \end_layout
 
 \begin_layout Itemize
-A Threat Model is a structured way of thinking about your goals and obstacles or people who may not want to you accomplish those goals.
+A Threat Model is a structured way of thinking about your goals,
+ obstacles,
+ and people who may not want to you accomplish those goals.
+ Threat modeling is a continuous practice,
+ you should revisit your threat model as time goes on and update it as new information becomes available about your threat actors,
+ additional mitigations,
+ and the effectiveness of your existing mitigations.
  Several formalized frameworks exist.
  I'll be using the framework outlined in the Zine 
 \begin_inset Quotes eld
@@ -587,7 +667,8 @@ What are our goals?
 Who or what might oppose or complicate those goals?
  What kinds of tools do they have?
  What risk do they pose?
- What would the impact be?
+ What the likelihood they would interfere?
+ What would the actual impact be if they did?
 \end_layout
 
 \begin_layout Itemize
@@ -629,17 +710,48 @@ Frameworks:
 \begin_deeper
 \begin_layout Itemize
 HARMS framework focuses less on technical treats and more on human impact:
- https://arxiv.org/html/2502.07116v1
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+https://arxiv.org/html/2502.07116v1
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 This zine explores threat modeling in more detail and is tailored towards activists:
- https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
+ 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-One potential place to research threats and mitigations:
- https://www.notrace.how/threat-library/
+https://opsec.riotmedicine.net/downloads#threat-modeling-fundamentals
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Research
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Online database of threats and mitigations,
+ tailored towards activism:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.notrace.how/threat-library/
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Talking with people,
+ researching online (potentially inside of Tails),
+ testing out and experimenting with mitigations yourself.
 \end_layout
 
 \end_deeper
@@ -973,7 +1085,7 @@ Using Tails
 
 \begin_layout Standard
 Tails has a handful of tools for doing basic computing tasks,
- the TOR browser for web surfing,
+ the Tor browser for web surfing,
  a basic Office suite,
  an offline password manager,
  sound and video players,
@@ -981,16 +1093,16 @@ Tails has a handful of tools for doing basic computing tasks,
 \end_layout
 
 \begin_layout Section
-Using TOR
+Using Tor
 \end_layout
 
 \begin_layout Subsection
-Connecting to TOR
+Connecting to Tor
 \end_layout
 
 \begin_layout Standard
-When you first launch TOR,
- you will be presented with a screen for configuring your TOR session.
+When you first launch Tor,
+ you will be presented with a screen for configuring your Tor session.
  If you are not connected to the Wifi or a network,
  do that first.
 \end_layout
@@ -1011,15 +1123,15 @@ In the following menu,
 \begin_inset Quotes eld
 \end_inset
 
-Connect to TOR Automatically
+Connect to Tor Automatically
 \begin_inset Quotes erd
 \end_inset
 
 .
- You will be given the option to connect with a TOR bridge.
- TOR bridges are essentially a VPN for the first hop of the TOR circuit,
- providing a way to access the TOR network in countries that block it,
- or if you want to hide from your ISP you are using TOR.
+ You will be given the option to connect with a Tor bridge.
+ Tor bridges are essentially a VPN for the first hop of the Tor circuit,
+ providing a way to access the Tor network in countries that block it,
+ or if you want to hide from your ISP you are using Tor.
  This may or may not be necessary given your threat model and risk tolerance.
  
 \end_layout
@@ -1043,7 +1155,7 @@ Connect
 \begin_inset Quotes erd
 \end_inset
 
- and the system will begin setting up your TOR circuit.
+ and the system will begin setting up your Tor circuit.
  It may take several minutes to complete.
 \end_layout
 
@@ -1058,15 +1170,15 @@ Connect
 \end_layout
 
 \begin_layout Subsection
-Sites that Block TOR
+Sites that Block Tor
 \end_layout
 
 \begin_layout Standard
-Some sites block access from the TOR network.
- One thing you can try is to use a new TOR circuit.
- Not all TOR exit nodes may be blocked by the site you are trying to visit.
- To request a new TOR circuit,
- select the options menu in the top right hand corner of the TOR browser,
+Some sites block access from the Tor network.
+ One thing you can try is to use a new Tor circuit.
+ Not all Tor exit nodes may be blocked by the site you are trying to visit.
+ To request a new Tor circuit,
+ select the options menu in the top right hand corner of the Tor browser,
  and select 
 \begin_inset Quotes eld
 \end_inset
@@ -1081,7 +1193,7 @@ New Tor Circuit for this Site
 \begin_layout Standard
 Note,
  if you are trying to start a new session to preserve anonymity,
- it is safer to restart TOR completely or restart Tails.
+ it is safer to restart Tor completely or restart Tails.
  
 \end_layout
 
@@ -1103,8 +1215,8 @@ Preserving Anonymity
 Tails can't preserve your anonymity online if you supply information that identifies you.
  If you are trying to remain anonymous during your session,
  don't log into any accounts that you use on other devices.
- If you create an account inside of a TOR session,
- don't log into that account outside of TOR.
+ If you create an account inside of a Tor session,
+ don't log into that account outside of Tor.
  
 \end_layout
 
@@ -1122,19 +1234,9 @@ Onion Links
 \end_layout
 
 \begin_layout Standard
-Onion URLs are web services that are served over TOR,
- and only accessible via TOR.
- Here's an example,
- the onion address for Duck-Duck-Go:
- https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
-\end_layout
-
-\begin_layout Standard
-Here is a Github repo of onion sites:
-\end_layout
-
-\begin_layout Standard
-https://github.com/alecmuffett/real-world-onion-sites?tab=readme-ov-file#education
+Onion URLs are web services that are served over Tor,
+ and only accessible via Tor.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1206,7 +1308,7 @@ Magic Wormhole
 \end_layout
 
 \begin_layout Itemize
-Bitwarden Sendx`
+Bitwarden Send.
 \end_layout
 
 \begin_layout Itemize
@@ -1224,8 +1326,8 @@ Creating a LUKS Encrypted Drive
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "1"
-key "1"
+label "0"
+key "0"
 literal "true"
 
 \end_inset
@@ -1300,6 +1402,10 @@ key "key-3"
 \end_inset
 
 https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_body
