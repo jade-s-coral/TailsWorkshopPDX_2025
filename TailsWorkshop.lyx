@@ -1239,20 +1239,83 @@ Onion URLs are web services that are served over Tor,
  
 \end_layout
 
+\begin_layout Subsection
+Workshop Exercise
+\end_layout
+
+\begin_layout Itemize
+Access the Onion Service provided by the organizer and download the files at the service.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The onion address for the files will be posted to a RiseUp Etherpad
+\end_layout
+
+\begin_layout Itemize
+https://pad.riseup.net
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Creating a LUKS Encrypted Drive
+\end_layout
+
+\begin_layout Subsection
+Workshop Exercise
+\end_layout
+
+\begin_layout Standard
+Set up a LUKS encrypted drive.
+\end_layout
+
 \begin_layout Section
 Setting up a Password Manager with KeePassXC
+\end_layout
+
+\begin_layout Subsection
+Workshop Exercise
+\end_layout
+
+\begin_layout Standard
+Create and store a secret string for sharing with a partner in a future exercise.
 \end_layout
 
 \begin_layout Section
 Using MetaData Cleaner
 \end_layout
 
+\begin_layout Subsection
+Workshop Exercise
+\end_layout
+
+\begin_layout Itemize
+Open the files you downloaded earlier in MetaData Cleaner
+\end_layout
+
+\begin_layout Itemize
+View the metadata stored in the files.
+\end_layout
+
+\begin_layout Itemize
+Clean the metadata
+\end_layout
+
+\begin_layout Itemize
+View the file metadata after cleaning.
+ 
+\end_layout
+
 \begin_layout Section
 Using OnionShare
 \end_layout
 
+\begin_layout Subsection
+Sharing OnionShare URLs And Private Keys
+\end_layout
+
 \begin_layout Standard
-Ways to share the OnionShare URL and or private key from within TailsOS.
+Ways to share the OnionShare URL and or private key from within Tails OS.
 \end_layout
 
 \begin_layout Standard
@@ -1293,8 +1356,8 @@ Browser based chat
 \end_layout
 
 \begin_layout Standard
-The following methods require either installing additional software into your Tails Usb,
- or copying files to an extra usb to transferring to another computer that has this software,
+The following methods require either installing additional software into your Tails USB,
+ or copying files to an extra USB to transferring to another computer that has this software,
  both of which present different kinds of security compromises.
 \end_layout
 
@@ -1315,12 +1378,22 @@ Bitwarden Send.
 Warpinator (Winpinator for Windows)
 \end_layout
 
-\begin_layout Itemize
-Ect.
+\begin_layout Subsection
+Workshop Exercise
 \end_layout
 
-\begin_layout Section
-Creating a LUKS Encrypted Drive
+\begin_layout Itemize
+Find a partner.
+ 
+\end_layout
+
+\begin_layout Itemize
+Save the secret string you saved in KeePassXC to a file.
+ 
+\end_layout
+
+\begin_layout Itemize
+Exchange secret files with your partner.
 \end_layout
 
 \begin_layout Bibliography
