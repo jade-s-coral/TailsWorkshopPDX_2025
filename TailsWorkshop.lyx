@@ -115,6 +115,10 @@ v0.2
 
 \end_layout
 
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Part
 Intro
 \end_layout
@@ -1072,11 +1076,105 @@ Selecting Boot-up Options
 \end_layout
 
 \begin_layout Standard
-Create encrypted partition
+When you launch Tails,
+ you will be presented with a menu of options for configuration including Language and keyboard layout.
+\end_layout
+
+\begin_layout Subsection
+Persistent Storage
 \end_layout
 
 \begin_layout Standard
-Mention enabling root password for installing additional software.
+The option for 
+\begin_inset Quotes eld
+\end_inset
+
+Persistent Storage
+\begin_inset Quotes erd
+\end_inset
+
+ allows you to setup up a dedicated encrypted partition where files can be saved across Tails sessions.
+ Saving files to a separate encrypted flash drive offers more flexibility and security,
+ however Tails can save settings like WiFi passwords or custom installed software to the persistent storage.
+ Setting up persistent storage is a trade off of security in exchange for convenience.
+ If your Tails session is accessed remotely by an attacker,
+ stored settings could be used to help identify you.
+ 
+\end_layout
+
+\begin_layout Subsection
+Administration Password
+\end_layout
+
+\begin_layout Standard
+Under 
+\begin_inset Quotes eld
+\end_inset
+
+Additional Settings
+\begin_inset Quotes erd
+\end_inset
+
+,
+ there is an option for 
+\begin_inset Quotes eld
+\end_inset
+
+Administration Password
+\begin_inset Quotes erd
+\end_inset
+
+,
+ when enabled,
+ this allows you to set an admin or 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ password for your session,
+ and run a terminal with admin privileges.
+ Admin privileges can be used to install additional software do other customizations to your Tails session you would otherwise be locked out of.
+ When you restart Tails,
+ the Admin password is disabled and reset.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the Administration password is another security trade off,
+ one that comes with bigger risks than persistent storage.
+ 
+\end_layout
+
+\begin_layout Standard
+When an administration password is unset,
+ it is much more difficult for an attacker to potentially install malware or otherwise tamper with your Tails session.
+ 
+\end_layout
+
+\begin_layout Standard
+Furthermore,
+ one of the ways Tails provides anonymity is by offering a standardized sandbox,
+ one that is indistinguishable from anyone else running Tails to any attacker able to collect identifying information about your machine.
+ Installing custom software breaks that standardization and makes your Tails USB recognizable as a unique instance of Tails,
+ which could be used to help identify you.
+\end_layout
+
+\begin_layout Standard
+Finally,
+ extra software presents additional potential vectors for attack.
+ The software bundled with tails is audited.
+ Bugs that can be exploited by an attacker are still found sometimes,
+ but the level of scrutiny is fairly high,
+ driving down the risk of exploitable bugs being present,
+ and making any bugs that are found more valuable and therefore more less likely to be used on a regular basis.
+ Any extra software you install may or may not have the same level of auditing and scrutiny.
+ Even if it is well audited,
+ all software has bugs,
+ and adding software with very few bugs is still more potentially exploitable bugs than existed before.
+ 
 \end_layout
 
 \begin_layout Part
@@ -1237,6 +1335,14 @@ Onion Links
 Onion URLs are web services that are served over Tor,
  and only accessible via Tor.
  
+\end_layout
+
+\begin_layout Subsection
+Secure Browser
+\end_layout
+
+\begin_layout Standard
+Add section on enabling secure browser.
 \end_layout
 
 \begin_layout Subsection
