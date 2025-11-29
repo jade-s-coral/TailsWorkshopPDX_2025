@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass article
+\textclass extarticle
 \use_default_options true
 \maintain_unincluded_children no
 \language american
@@ -32,7 +32,8 @@
 \index_command default
 \float_placement class
 \float_alignment class
-\paperfontsize default
+\paperfontsize 17
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -48,6 +49,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -99,8 +101,8 @@ v0.2
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/Tree.png
-	scale 200
-	BoundingBox -60bp 0bp 520bp 787bp
+	scale 150
+	BoundingBox -350bp 0bp 520bp 787bp
 	clip
 
 \end_inset
@@ -112,10 +114,6 @@ v0.2
 \begin_inset Newpage pagebreak
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
@@ -342,6 +340,8 @@ Otherwise co-opt or use the medium for unintended purposes.
 \begin_inset Graphics
 	filename images/CritterAndCable.png
 	scale 80
+	BoundingBox -500bp 0bp 1626bp 824bp
+	clip
 
 \end_inset
 
@@ -389,7 +389,7 @@ For example,
 \begin_inset Graphics
 	filename images/SSLDiagram.png
 	scale 70
-	BoundingBox 80bp 0bp 2237bp 630bp
+	BoundingBox -500bp 0bp 2237bp 630bp
 	clip
 
 \end_inset
@@ -426,6 +426,8 @@ Signal is end-to-end encrypted,
 \begin_inset Graphics
 	filename images/EndToEndDiagram.png
 	scale 70
+	BoundingBox -500bp 0bp 2172bp 792bp
+	clip
 
 \end_inset
 
@@ -470,6 +472,7 @@ SimpleX and Delta Chat are mostly peer-to-peer,
 \begin_inset Graphics
 	filename images/PeerToPeerDiagram.png
 	scale 70
+	BoundingBox -500bp 0bp 1974bp 804bp
 
 \end_inset
 
@@ -513,18 +516,18 @@ Example:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Risk of getting in a car crash:
  Cost:
  Pretty high,
  ranges from injury or death depending on the kind of accident.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 x
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Likelihood:
  Depends on your age,
  lifestyle,
@@ -540,7 +543,7 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 = Risk depends on individual factors.
 \end_layout
 
@@ -695,6 +698,8 @@ Is our threat model well informed?
 \begin_inset Graphics
 	filename images/ThreatModelDiagram.png
 	scale 70
+	BoundingBox -400bp 0bp 2329bp 771bp
+	clip
 
 \end_inset
 
@@ -1209,6 +1214,8 @@ When you first launch Tor,
 \begin_inset Graphics
 	filename images/ConnectingToTor.png
 	scale 30
+	BoundingBox -200bp 0bp 1007bp 638bp
+	clip
 
 \end_inset
 
@@ -1238,6 +1245,7 @@ Connect to Tor Automatically
 \begin_inset Graphics
 	filename images/ConnectToTorDefaults.png
 	scale 30
+	BoundingBox -200bp 0bp 1007bp 638bp
 
 \end_inset
 
@@ -1261,6 +1269,7 @@ Connect
 \begin_inset Graphics
 	filename images/ConnectToTorInProgress.png
 	scale 30
+	BoundingBox -200bp 0bp 1007bp 638bp
 
 \end_inset
 
@@ -1299,6 +1308,7 @@ Note,
 \begin_inset Graphics
 	filename images/NewTorCircuitCropped.png
 	scale 30
+	BoundingBox -200bp 0bp 1123bp 739bp
 
 \end_inset
 
@@ -1321,20 +1331,12 @@ Tails can't preserve your anonymity online if you supply information that identi
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/Mask.png
+	BoundingBox -200bp 0bp 372bp 248bp
+	clip
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Onion Links
-\end_layout
-
-\begin_layout Standard
-Onion URLs are web services that are served over Tor,
- and only accessible via Tor.
- 
 \end_layout
 
 \begin_layout Subsection
