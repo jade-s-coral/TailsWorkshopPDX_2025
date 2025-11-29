@@ -1347,7 +1347,7 @@ Tails can't preserve your anonymity online if you supply information that identi
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/Mask.png
-	BoundingBox -200bp 0bp 372bp 248bp
+	BoundingBox -600bp 0bp 372bp 248bp
 	clip
 
 \end_inset
@@ -1426,6 +1426,16 @@ Safest
  security levels.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/BrowserSecurity.png
+	clip
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Workshop Exercise
 \end_layout
@@ -1477,6 +1487,17 @@ Start with the device-to-be-encrypted unplugged.
  make sure the description matches what you'd expect (brand,
  size,
  etc).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/LUKSEncryption.png
+	scale 50
+	BoundingBox -20bp 0bp 914bp 619bp
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
