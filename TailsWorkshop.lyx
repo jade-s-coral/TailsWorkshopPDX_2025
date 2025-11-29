@@ -1548,6 +1548,54 @@ Set up a LUKS encrypted drive.
 Setting up a Password Manager with KeePassXC
 \end_layout
 
+\begin_layout Standard
+KeePassXC is a password manager that can be used to storing passwords.
+ Generating random passwords stored in a secure location is safer than re-using passwords.
+ Unlike cloud-based password managers,
+ KeePassXC stores passwords in a file ("Passwords.kdbx") that needs to be saved somewhere safe.
+ Although it is possible to create "Persistent Storage" inside Tails,
+ this is not recommended.
+ We recommend using a separate LUKS-encrypted USB to store this file.
+\end_layout
+
+\begin_layout Itemize
+If needed,
+ attach the intended storage device then open KeePassXC via "Apps > Accessories > KeePassXC".
+ Click the "Create Database" button (or "Database > New Database") to create a new database file.
+ Continue through the "General Database Information" and "Encryption Settings" screens without changing the defaults.
+ The database name should be "Passwords" with no description.
+ The database format should be "KDBX 4 (recommended)".
+\end_layout
+
+\begin_layout Itemize
+Finally,
+ generate a passphrase - either within KeePassXC or using EFF's diceware process.
+ The passphrase should be at least six words long.
+ If using KeePassXC,
+ click on the little dice icon to the right of the "Enter password" field.
+ Change to the "Passphrase" tab,
+ toggle the visibility (the eye icon at the top right),
+ and make sure the word count is *at least* six words.
+ Although it might be tempting to change the word case or word separator,
+ adding more words is a more effective way to make the passphrase stronger.
+ Make sure to memorize the passphrase or write it down somewhere safe since that is the only way to unlock the database file.
+\end_layout
+
+\begin_layout Itemize
+After setting the passphrase,
+ you will be asked where to save the database.
+ Save it to your LUKS-encrypted USB with the default file name ("Passwords.kdbx").
+ It is recommended to keep the database somewhere obvious and not to move it.
+ Once the database is saved,
+ you can add secrets (eg.
+ passwords) to it!
+\end_layout
+
+\begin_layout Itemize
+Note:
+ you can access this database from any device that has KeePassXC (or KeePassDX or KeePassium) if it has access to the file (or a copy of it) and the passphrase.
+\end_layout
+
 \begin_layout Subsection
 Workshop Exercise
 \end_layout
@@ -1561,7 +1609,51 @@ Using MetaData Cleaner
 \end_layout
 
 \begin_layout Standard
-MetaData cleaner is an application for scrubbing 
+MetaData cleaner is an application for scrubbing metadata from files.
+ If you intend to share documents,
+ images,
+ and other files,
+ removing metadata is one step that can preserve anonymity.
+ Note that MetaData cleaner can remove a lot of metadata,
+ but it isn't perfect,
+ and there is some metadata it may miss.
+ Also note that sharing images or video anonymously is extremely difficult.
+ Locations can be determined from landmarks or other features by even skilled hobbyists,
+ and images of specific clothing or other features could be used to identify you if correlated against other images.
+ 
+\end_layout
+
+\begin_layout Itemize
+Open Metadata cleaner under 
+\begin_inset Quotes eld
+\end_inset
+
+Apps > Metadata Cleaner
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Open a file or folder by pressing the add buttons in the top left of Metadata cleaner's window.
+\end_layout
+
+\begin_layout Itemize
+You can view the medatadata associated with the file by clicking on the arrow to the right of the file name.
+\end_layout
+
+\begin_layout Itemize
+When you are ready to clean the data,
+ hit the 
+\begin_inset Quotes eld
+\end_inset
+
+Clean
+\begin_inset Quotes erd
+\end_inset
+
+ button in the bottom right hand corner.
 \end_layout
 
 \begin_layout Subsection
@@ -1589,6 +1681,71 @@ View the file metadata after cleaning.
 Using OnionShare
 \end_layout
 
+\begin_layout Standard
+OnionShare is used for sharing files peer-to-peer.
+ When you share a file,
+ an onion address will be generated for the other party to open in TOR to access your share.
+ Unless configured to disable it,
+ you will also need to share a private key.
+ It is advisable to share the URL and the key via two different channels.
+ 
+\end_layout
+
+\begin_layout Itemize
+OnionShare can be opened under 
+\begin_inset Quotes eld
+\end_inset
+
+Apps > Internet > OnionShare
+\end_layout
+
+\begin_layout Itemize
+To share files in 
+\begin_inset Quotes eld
+\end_inset
+
+Sharing
+\begin_inset Quotes erd
+\end_inset
+
+ mode,
+ click 
+\begin_inset Quotes eld
+\end_inset
+
+Start Sharing
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Select a file.
+\end_layout
+
+\begin_layout Itemize
+Selecting 
+\begin_inset Quotes eld
+\end_inset
+
+Always open this tab when OnionShare is started will keep your Onion address as long as your Tails session is running.
+\end_layout
+
+\begin_layout Itemize
+Selecting 
+\begin_inset Quotes eld
+\end_inset
+
+This is a public OnionShare service
+\begin_inset Quotes erd
+\end_inset
+
+ disables the private key.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Sharing OnionShare URLs And Private Keys
 \end_layout
