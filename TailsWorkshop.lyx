@@ -1448,6 +1448,94 @@ https://pad.riseup.net
 Creating a LUKS Encrypted Drive
 \end_layout
 
+\begin_layout Standard
+LUKs stands for 
+\begin_inset Quotes eld
+\end_inset
+
+Linux Unified Key Setup
+\begin_inset Quotes erd
+\end_inset
+
+,
+ and is a standard for encrypting hard drives.
+ In Tails,
+ you can create an encrypted external flash drive for storing files in.
+ Storing files for a specific project inside a dedicated encrypted flash drive lets you isolate projects.
+ If your Tails session becomes compromised,
+ data stored on external drives and not attached to the system will be safe.
+\end_layout
+
+\begin_layout Itemize
+Start with the device-to-be-encrypted unplugged.
+ First,
+ open the Disk utility by clicking "Apps > Utilities > Disks".
+ The Disks utility will list all current storage devices on the left side of the screen.
+ Next,
+ plug in the device-to-be-encrypted and look for it in the Disks utility.
+ Before proceeding,
+ make sure the description matches what you'd expect (brand,
+ size,
+ etc).
+\end_layout
+
+\begin_layout Itemize
+Before continuing,
+ make sure you are OK with permanently deleting whatever data was already on the device.
+ When you are ready,
+ select the device-to-be-encrypted (click on it to highlight it) then click the button that looks like three dots in a vertical line in the title bar.
+ Select the "Format Disk" option to erase all existing partitions on the device.
+ In the "Format Disk" dialog,
+ choose "Overwrite existing data with zeroes" in the Erase menu.
+ When ready,
+ click "Format" twice (second time confirming that you are sure).
+ This may take some time.
+\end_layout
+
+\begin_layout Itemize
+Finally,
+ we create the encrypted partition by selecting the device-to-be-encrypted then clicking the + button to create a new partition.
+ The partition creation assistant will guide you through some options.
+ Below are our recommendations:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Partition Size:
+ Cover the entire size of the device.
+\end_layout
+
+\begin_layout Itemize
+Volume Name:
+ Optional,
+ but could be useful to identify it.
+\end_layout
+
+\begin_layout Itemize
+Erase:
+ Optional,
+ but not harmful at this stage.
+\end_layout
+
+\begin_layout Itemize
+Type:
+ Select "Internal disk for use with Linux systems only (Ext4)" and "Password protect volume (LUKS)".
+\end_layout
+
+\begin_layout Itemize
+Password:
+ Enter a passphrase of at least six *random* words.
+ Don't just make up words!
+ If needed,
+ look up EFF's diceware word list for help.
+\end_layout
+
+\begin_layout Itemize
+After entering a sufficiently random passphrase,
+ click "Create" to start the LUKS encryption.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Workshop Exercise
 \end_layout
@@ -1470,6 +1558,10 @@ Create and store a secret string for sharing with a partner in a future exercise
 
 \begin_layout Section
 Using MetaData Cleaner
+\end_layout
+
+\begin_layout Standard
+MetaData cleaner is an application for scrubbing 
 \end_layout
 
 \begin_layout Subsection
