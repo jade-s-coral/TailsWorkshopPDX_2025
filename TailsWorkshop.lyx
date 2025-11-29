@@ -1191,6 +1191,13 @@ Finally,
  
 \end_layout
 
+\begin_layout Standard
+That being said,
+ if your use case calls for installing and running a specific piece of software,
+ you can do it by enabling the Administration Password and then opening the Synaptic Package Manger or installing from the command line.
+ 
+\end_layout
+
 \begin_layout Part
 Using Tails
 \end_layout
@@ -1349,11 +1356,74 @@ Tails can't preserve your anonymity online if you supply information that identi
 \end_layout
 
 \begin_layout Subsection
-Secure Browser
+Tor Browser Security Settings
 \end_layout
 
 \begin_layout Standard
-Add section on enabling secure browser.
+The Tor browser has settings that allow you to enable or disable various levels of JavaScript features.
+ A skilled attacker could use malicious JavaScript on a web page you visit to compromise your Tails session security.
+ Changing the 
+\begin_inset Quotes eld
+\end_inset
+
+Security Level
+\begin_inset Quotes erd
+\end_inset
+
+,
+ disables Javascript,
+ which is a strong mitigation against these kinds of attacks,
+ but can make some websites nonfunctional.
+\end_layout
+
+\begin_layout Standard
+To change the 
+\begin_inset Quotes eld
+\end_inset
+
+Security Level
+\begin_inset Quotes erd
+\end_inset
+
+,
+ click the shield in the upper right hand corner,
+ to the right of the search bar.
+ Click 
+\begin_inset Quotes eld
+\end_inset
+
+Settings
+\begin_inset Quotes erd
+\end_inset
+
+ in the pop up that appears,
+ and then select between 
+\begin_inset Quotes eld
+\end_inset
+
+Standard
+\begin_inset Quotes erd
+\end_inset
+
+,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Safer
+\begin_inset Quotes erd
+\end_inset
+
+,
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Safest
+\begin_inset Quotes erd
+\end_inset
+
+ security levels.
 \end_layout
 
 \begin_layout Subsection
