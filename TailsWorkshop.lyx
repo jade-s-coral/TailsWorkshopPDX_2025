@@ -1463,7 +1463,7 @@ Creating a LUKS Encrypted Drive
 \end_layout
 
 \begin_layout Standard
-LUKs stands for 
+LUKS stands for 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1636,7 +1636,7 @@ Workshop Exercise
 \end_layout
 
 \begin_layout Standard
-Create and store a secret string for sharing with a partner in a future exercise.
+Generate a pass phrase that is 6-8 words long for sharing with a partner in a future exercise.
 \end_layout
 
 \begin_layout Section
@@ -1644,12 +1644,12 @@ Using MetaData Cleaner
 \end_layout
 
 \begin_layout Standard
-MetaData cleaner is an application for scrubbing metadata from files.
+MetaData Cleaner is an application for scrubbing metadata from files.
  If you intend to share documents,
  images,
  and other files,
  removing metadata is one step that can preserve anonymity.
- Note that MetaData cleaner can remove a lot of metadata,
+ Note that MetaData Cleaner can remove a lot of metadata,
  but it isn't perfect,
  and there is some metadata it may miss.
  Also note that sharing images or video anonymously is extremely difficult.
@@ -1666,7 +1666,7 @@ MetaData cleaner is an application for scrubbing metadata from files.
 \end_layout
 
 \begin_layout Itemize
-Open Metadata cleaner under 
+Open MetaData Cleaner under 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1678,11 +1678,11 @@ Apps > Metadata Cleaner
 \end_layout
 
 \begin_layout Itemize
-Open a file or folder by pressing the add buttons in the top left of Metadata cleaner's window.
+Open a file or folder by pressing the add buttons in the top left of MetaData Cleaner's window.
 \end_layout
 
 \begin_layout Itemize
-You can view the medatadata associated with the file by clicking on the arrow to the right of the file name.
+You can view the metadata associated with the file by clicking on the arrow to the right of the file name.
 \end_layout
 
 \begin_layout Standard
@@ -1736,7 +1736,7 @@ Using OnionShare
 \begin_layout Standard
 OnionShare is used for sharing files peer-to-peer.
  When you share a file,
- an onion address will be generated for the other party to open in TOR to access your share.
+ an onion address will be generated for the other party to open in Tor to access your share.
  Unless configured to disable it,
  you will also need to share a private key.
  It is advisable to share the URL and the key via two different channels.
@@ -1759,6 +1759,10 @@ OnionShare can be opened under
 \end_inset
 
 Apps > Internet > OnionShare
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1792,7 +1796,11 @@ Selecting
 \begin_inset Quotes eld
 \end_inset
 
-Always open this tab when OnionShare is started will keep your Onion address as long as your Tails session is running.
+Always open this tab when OnionShare is started 
+\begin_inset Quotes eld
+\end_inset
+
+will keep your Onion address as long as your Tails session is running.
 \end_layout
 
 \begin_layout Itemize
@@ -1834,7 +1842,7 @@ Tuta mail lets you create email addresses without an additional verification inf
 \end_layout
 
 \begin_layout Itemize
-Gurrillamail.com lets you create disposable email addresses.
+guerrillamail.com lets you create disposable email addresses.
 \end_layout
 
 \end_deeper
@@ -1861,7 +1869,7 @@ The following methods require either installing additional software into your Ta
 
 \begin_layout Itemize
 Signal (or other messenger app like Discord,
- ect.)
+ etc.)
 \end_layout
 
 \begin_layout Itemize
@@ -1869,7 +1877,7 @@ Magic Wormhole
 \end_layout
 
 \begin_layout Itemize
-Bitwarden Send.
+Bitwarden Send
 \end_layout
 
 \begin_layout Itemize
