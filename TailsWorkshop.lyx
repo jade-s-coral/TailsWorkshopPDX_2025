@@ -284,20 +284,24 @@ Dark web
  while also offering an Onion service as a privacy preserving option for users.
  For example,
  here is the onion address for the search engine Duck Duck Go:
+ 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
+\begin_layout Description
+https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6t
 \end_layout
 
-\end_deeper
+\begin_layout Description
+wagswzczad.onion
+\end_layout
+
 \begin_layout Itemize
 Github repository of onion sites:
+ 
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Description
 https://github.com/alecmuffett/real-world-onion-sites
 \end_layout
 
@@ -1579,6 +1583,16 @@ KeePassXC is a password manager that can be used to storing passwords.
  We recommend using a separate LUKS-encrypted USB to store this file.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/KeePassStart.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 If needed,
  attach the intended storage device then open KeePassXC via "Apps > Accessories > KeePassXC".
@@ -1642,6 +1656,13 @@ MetaData cleaner is an application for scrubbing metadata from files.
  Locations can be determined from landmarks or other features by even skilled hobbyists,
  and images of specific clothing or other features could be used to identify you if correlated against other images.
  
+\begin_inset Graphics
+	filename images/MetadataCleaner.png
+	scale 80
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1662,6 +1683,16 @@ Open a file or folder by pressing the add buttons in the top left of Metadata cl
 
 \begin_layout Itemize
 You can view the medatadata associated with the file by clicking on the arrow to the right of the file name.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/MetadataCleanerFiles.png
+	scale 80
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1710,6 +1741,16 @@ OnionShare is used for sharing files peer-to-peer.
  you will also need to share a private key.
  It is advisable to share the URL and the key via two different channels.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/OnionShareStart.png
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
